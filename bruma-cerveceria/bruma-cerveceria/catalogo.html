@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo — Cervecería Bruma</title>
+  <meta name="description" content="Explora el catálogo completo de cervezas artesanales de Cervecería Bruma: IPA, Stout, Lager, Ale y ediciones limitadas.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%BA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html" class="marca">
+        <span class="marca__insignia" aria-hidden="true">🍺</span>
+        <span>
+          Bruma
+          <span class="marca__lema">Cervecería artesanal</span>
+        </span>
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav__enlaces">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="nav__acciones">
+        <a href="login.html" class="nav__icono" aria-label="Iniciar sesión o registrarme" title="Cuenta">👤</a>
+        <a href="carrito.html" class="nav__icono" aria-label="Ver carrito de compras" title="Carrito">
+          🛒
+          <span class="nav__contador" data-contador-carrito style="display:none">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+
+    <section class="encabezado-pagina">
+      <div class="container">
+        <span class="seccion__eyebrow">Catálogo</span>
+        <h1>Todas nuestras cervezas</h1>
+        <p style="max-width:60ch;">Ocho estilos permanentes, elaborados en lotes de 800 litros. Filtra por estilo para encontrar la tuya.</p>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="titulo-catalogo">
+      <div class="container">
+        <h2 id="titulo-catalogo" class="visually-hidden">Listado de productos</h2>
+
+        <div class="filtros-catalogo" role="group" aria-label="Filtrar cervezas por estilo">
+          <button type="button" class="filtro-boton esta-activo" data-filtro="todas">Todas</button>
+          <button type="button" class="filtro-boton" data-filtro="ale">Ale</button>
+          <button type="button" class="filtro-boton" data-filtro="ipa">IPA</button>
+          <button type="button" class="filtro-boton" data-filtro="stout">Stout</button>
+          <button type="button" class="filtro-boton" data-filtro="lager">Lager</button>
+          <button type="button" class="filtro-boton" data-filtro="trigo">Trigo</button>
+        </div>
+
+        <div class="grilla-productos" id="grilla-catalogo"></div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--carbon" aria-labelledby="titulo-mayoria">
+      <div class="container" style="max-width:720px; text-align:center;">
+        <article class="reveal">
+          <span class="seccion__eyebrow">Antes de comprar</span>
+          <h2 id="titulo-mayoria">Venta exclusiva para mayores de 18 años</h2>
+          <p>Para finalizar una compra necesitas una cuenta con tu fecha de nacimiento verificada. Es rápido y solo lo pediremos una vez.</p>
+          <a href="login.html" class="boton boton--primario">Crear cuenta o iniciar sesión</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="container">
+      <div class="pie-pagina__grilla">
+        <div>
+          <a href="index.html" class="marca" style="margin-bottom:14px;">
+            <span class="marca__insignia" aria-hidden="true">🍺</span>
+            <span>Bruma</span>
+          </a>
+          <p>Cervecería artesanal fundada en Valdivia. Elaboramos cerveza en pequeños lotes para quienes disfrutan el detalle.</p>
+          <div class="pie-pagina__redes">
+            <a href="#" aria-label="Instagram de Cervecería Bruma">IG</a>
+            <a href="#" aria-label="Facebook de Cervecería Bruma">FB</a>
+            <a href="#" aria-label="WhatsApp de Cervecería Bruma">WA</a>
+          </div>
+        </div>
+        <div>
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Mi cuenta</h4>
+          <ul>
+            <li><a href="login.html">Iniciar sesión</a></li>
+            <li><a href="login.html">Crear cuenta</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visítanos</h4>
+          <p>Camino a Niebla 4820<br>Valdivia, Región de Los Ríos</p>
+          <p>Mar. a sáb., 12:00–21:00<br>contacto@brumacerveceria.cl</p>
+        </div>
+      </div>
+      <div class="pie-pagina__inferior">
+        <p>© <span data-anio-actual></span> Cervecería Bruma. Bebe con moderación. Venta prohibida a menores de 18 años.</p>
+        <div class="pie-pagina__legal">
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <p id="aviso-flotante" class="aviso-envio" role="status" style="position:fixed; bottom:20px; right:20px; z-index:80; max-width:280px;"></p>
+
+  <script src="js/productos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

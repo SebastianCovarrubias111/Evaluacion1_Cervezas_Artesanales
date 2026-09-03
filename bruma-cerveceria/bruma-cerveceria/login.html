@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión — Cervecería Bruma</title>
+  <meta name="description" content="Inicia sesión o crea tu cuenta en Cervecería Bruma. Venta exclusiva para mayores de 18 años.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%BA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html" class="marca">
+        <span class="marca__insignia" aria-hidden="true">🍺</span>
+        <span>
+          Bruma
+          <span class="marca__lema">Cervecería artesanal</span>
+        </span>
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav__enlaces">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="nav__acciones">
+        <a href="login.html" class="nav__icono" aria-label="Iniciar sesión o registrarme" title="Cuenta">👤</a>
+        <a href="carrito.html" class="nav__icono" aria-label="Ver carrito de compras" title="Carrito">
+          🛒
+          <span class="nav__contador" data-contador-carrito style="display:none">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+    <section class="seccion" aria-labelledby="titulo-acceso">
+      <div class="container">
+        <div class="panel-acceso reveal" id="panel-acceso">
+          <span class="sello-edad">🔞 Contenido para mayores de 18 años</span>
+          <h1 id="titulo-acceso" style="font-size:1.6rem;">Accede a tu cuenta</h1>
+          <p style="margin-bottom:28px;">Para comprar en Cervecería Bruma debemos verificar tu edad. Crea una cuenta o inicia sesión si ya tienes una.</p>
+
+          <div class="pestanas-acceso">
+            <button type="button" class="pestana-boton esta-activa" data-vista="vista-login">Iniciar sesión</button>
+            <button type="button" class="pestana-boton" data-vista="vista-registro">Crear cuenta</button>
+          </div>
+
+          <!-- LOGIN -->
+          <article id="vista-login" class="vista-formulario esta-visible">
+            <form id="formulario-login" class="formulario formulario--ancho" novalidate>
+              <div class="campo">
+                <label for="login-correo">Correo electrónico</label>
+                <input type="email" id="login-correo" name="correo" autocomplete="email" placeholder="tu@correo.cl" required>
+                <span class="mensaje-error" role="alert"></span>
+              </div>
+              <div class="campo">
+                <label for="login-clave">Contraseña</label>
+                <input type="password" id="login-clave" name="clave" autocomplete="current-password" placeholder="••••••••" minlength="8" required>
+                <span class="mensaje-error" role="alert"></span>
+              </div>
+              <div class="campo-check">
+                <input type="checkbox" id="login-recordar" name="recordar">
+                <label for="login-recordar">Mantener sesión iniciada en este equipo</label>
+              </div>
+              <button type="submit" class="boton boton--primario" style="width:100%;">Iniciar sesión</button>
+              <p id="aviso-login" class="aviso-envio" role="status"></p>
+            </form>
+          </article>
+
+          <!-- REGISTRO -->
+          <article id="vista-registro" class="vista-formulario">
+            <form id="formulario-registro" class="formulario formulario--ancho" novalidate>
+              <div class="campo">
+                <label for="registro-nombre">Nombre completo</label>
+                <input type="text" id="registro-nombre" name="nombre" autocomplete="name" placeholder="Tu nombre y apellido" required>
+                <span class="mensaje-error" role="alert"></span>
+              </div>
+
+              <div class="campo">
+                <label for="registro-correo">Correo electrónico</label>
+                <input type="email" id="registro-correo" name="correo" autocomplete="email" placeholder="tu@correo.cl" required>
+                <span class="mensaje-error" role="alert"></span>
+              </div>
+
+              <div class="campo">
+                <label for="registro-nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="registro-nacimiento" name="nacimiento" autocomplete="bday" required>
+                <small class="ayuda">Debes tener 18 años o más para crear una cuenta.</small>
+                <span class="mensaje-error" role="alert"></span>
+              </div>
+
+              <div class="fila-campos">
+                <div class="campo">
+                  <label for="registro-clave">Contraseña</label>
+                  <input type="password" id="registro-clave" name="clave" autocomplete="new-password" placeholder="Mínimo 8 caracteres" minlength="8" required>
+                  <span class="mensaje-error" role="alert"></span>
+                </div>
+                <div class="campo">
+                  <label for="registro-clave-confirmar">Confirmar contraseña</label>
+                  <input type="password" id="registro-clave-confirmar" name="claveConfirmar" autocomplete="new-password" placeholder="Repite tu contraseña" minlength="8" required>
+                  <span class="mensaje-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="campo-check">
+                <input type="checkbox" id="registro-terminos" name="terminos" required>
+                <label for="registro-terminos">Confirmo que soy mayor de 18 años y acepto los términos y la política de consumo responsable.</label>
+                <span class="mensaje-error" role="alert"></span>
+              </div>
+
+              <button type="submit" class="boton boton--primario" style="width:100%;">Crear cuenta</button>
+              <p id="aviso-registro" class="aviso-envio" role="status"></p>
+            </form>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="container">
+      <div class="pie-pagina__inferior" style="border-top:none; justify-content:center;">
+        <p>© <span data-anio-actual></span> Cervecería Bruma. Bebe con moderación. Venta prohibida a menores de 18 años.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

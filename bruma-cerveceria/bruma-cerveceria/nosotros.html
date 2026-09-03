@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros — Cervecería Bruma</title>
+  <meta name="description" content="Conoce la historia, los valores y el equipo detrás de Cervecería Bruma, cervecería artesanal de Valdivia.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%BA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html" class="marca">
+        <span class="marca__insignia" aria-hidden="true">🍺</span>
+        <span>
+          Bruma
+          <span class="marca__lema">Cervecería artesanal</span>
+        </span>
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav__enlaces">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="nav__acciones">
+        <a href="login.html" class="nav__icono" aria-label="Iniciar sesión o registrarme" title="Cuenta">👤</a>
+        <a href="carrito.html" class="nav__icono" aria-label="Ver carrito de compras" title="Carrito">
+          🛒
+          <span class="nav__contador" data-contador-carrito style="display:none">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+
+    <section class="encabezado-pagina">
+      <div class="container">
+        <span class="seccion__eyebrow">Nuestra historia</span>
+        <h1>Bruma nació de un patio y una olla de 20 litros</h1>
+        <p style="max-width:60ch;">Hoy somos un equipo de siete personas, pero seguimos elaborando cada receta como si fuera para nuestros propios amigos.</p>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="titulo-historia">
+      <div class="container">
+        <h2 id="titulo-historia" class="visually-hidden">Historia de la cervecería</h2>
+
+        <article class="franja-alterna">
+          <div class="franja-alterna__imagen reveal">
+            <img src="https://picsum.photos/seed/bruma-fundadores-2016/700/560" alt="Fundadores de Cervecería Bruma preparando el primer lote en 2016" loading="lazy" width="700" height="560">
+          </div>
+          <div class="reveal">
+            <span class="franja-alterna__numero">2016 — El origen</span>
+            <h3>De la cocina de un departamento a la primera sala de cocción</h3>
+            <p>Camila Reyes y Tomás Ibarra empezaron a cocer cerveza casera un invierno en Valdivia, motivados por la falta de opciones artesanales en el sur. La primera Pale Ale se compartió entre vecinos; dos años después ya no alcanzaban a producir para la demanda del barrio.</p>
+          </div>
+        </article>
+
+        <article class="franja-alterna franja-alterna--invertida">
+          <div class="franja-alterna__imagen reveal">
+            <img src="https://picsum.photos/seed/bruma-sala-coccion/700/560" alt="Sala de cocción actual de Cervecería Bruma con tanques de acero inoxidable" loading="lazy" width="700" height="560">
+          </div>
+          <div class="reveal">
+            <span class="franja-alterna__numero">2019 — Primera sala propia</span>
+            <h3>Un galpón junto al río, pensado para crecer despacio</h3>
+            <p>Instalamos un sistema de 800 litros y sumamos a dos maestros cerveceros. Definimos ocho recetas permanentes y empezamos a distribuir a bares de Valdivia, Osorno y Puerto Varas.</p>
+          </div>
+        </article>
+
+        <article class="franja-alterna">
+          <div class="franja-alterna__imagen reveal">
+            <img src="https://picsum.photos/seed/bruma-tienda-online-2023/700/560" alt="Botellas de Cervecería Bruma listas para despacho" loading="lazy" width="700" height="560">
+          </div>
+          <div class="reveal">
+            <span class="franja-alterna__numero">2023 — La tienda online</span>
+            <h3>Hoy despachamos a todo Chile</h3>
+            <p>Abrimos la venta directa al público para que cualquier persona mayor de 18 años pueda pedir sus botellas favoritas sin salir de casa, con la misma frescura de barril.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion seccion--carbon" aria-labelledby="titulo-valores">
+      <div class="container">
+        <div class="seccion__encabezado reveal">
+          <span class="seccion__eyebrow">Lo que no negociamos</span>
+          <h2 id="titulo-valores">Nuestros valores</h2>
+        </div>
+        <div class="grilla-valores">
+          <div class="tarjeta-valor reveal">
+            <div class="tarjeta-valor__icono" aria-hidden="true">🌾</div>
+            <h3>Ingredientes reales</h3>
+            <p>Malta chilena, lúpulo trazable y agua de vertiente. Sin concentrados ni saborizantes artificiales.</p>
+          </div>
+          <div class="tarjeta-valor reveal">
+            <div class="tarjeta-valor__icono" aria-hidden="true">⏳</div>
+            <h3>Tiempo, no atajos</h3>
+            <p>Fermentaciones de hasta 21 días. Preferimos un lote más pequeño antes que bajar la calidad.</p>
+          </div>
+          <div class="tarjeta-valor reveal">
+            <div class="tarjeta-valor__icono" aria-hidden="true">🔞</div>
+            <h3>Consumo responsable</h3>
+            <p>Vendemos solo a mayores de 18 años y promovemos el disfrute moderado en cada etiqueta.</p>
+          </div>
+          <div class="tarjeta-valor reveal">
+            <div class="tarjeta-valor__icono" aria-hidden="true">🤝</div>
+            <h3>Cercanía</h3>
+            <p>Respondemos cada mensaje del formulario de contacto nosotros mismos, sin bots ni respuestas genéricas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="titulo-equipo">
+      <div class="container">
+        <div class="seccion__encabezado reveal">
+          <span class="seccion__eyebrow">Quiénes cocinan tu cerveza</span>
+          <h2 id="titulo-equipo">El equipo</h2>
+        </div>
+        <div class="grilla-equipo">
+          <div class="persona-equipo reveal">
+            <div class="persona-equipo__foto"><img src="https://picsum.photos/seed/bruma-equipo-camila/300/300" alt="Camila Reyes, cofundadora y maestra cervecera" loading="lazy" width="300" height="300"></div>
+            <h3>Camila Reyes</h3>
+            <span>Cofundadora · Maestra cervecera</span>
+          </div>
+          <div class="persona-equipo reveal">
+            <div class="persona-equipo__foto"><img src="https://picsum.photos/seed/bruma-equipo-tomas/300/300" alt="Tomás Ibarra, cofundador y encargado de producción" loading="lazy" width="300" height="300"></div>
+            <h3>Tomás Ibarra</h3>
+            <span>Cofundador · Producción</span>
+          </div>
+          <div class="persona-equipo reveal">
+            <div class="persona-equipo__foto"><img src="https://picsum.photos/seed/bruma-equipo-javiera/300/300" alt="Javiera Solís, encargada de control de calidad" loading="lazy" width="300" height="300"></div>
+            <h3>Javiera Solís</h3>
+            <span>Control de calidad</span>
+          </div>
+          <div class="persona-equipo reveal">
+            <div class="persona-equipo__foto"><img src="https://picsum.photos/seed/bruma-equipo-matias/300/300" alt="Matías Cárdenas, encargado de despachos" loading="lazy" width="300" height="300"></div>
+            <h3>Matías Cárdenas</h3>
+            <span>Logística y despachos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="container">
+      <div class="pie-pagina__grilla">
+        <div>
+          <a href="index.html" class="marca" style="margin-bottom:14px;">
+            <span class="marca__insignia" aria-hidden="true">🍺</span>
+            <span>Bruma</span>
+          </a>
+          <p>Cervecería artesanal fundada en Valdivia. Elaboramos cerveza en pequeños lotes para quienes disfrutan el detalle.</p>
+          <div class="pie-pagina__redes">
+            <a href="#" aria-label="Instagram de Cervecería Bruma">IG</a>
+            <a href="#" aria-label="Facebook de Cervecería Bruma">FB</a>
+            <a href="#" aria-label="WhatsApp de Cervecería Bruma">WA</a>
+          </div>
+        </div>
+        <div>
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Mi cuenta</h4>
+          <ul>
+            <li><a href="login.html">Iniciar sesión</a></li>
+            <li><a href="login.html">Crear cuenta</a></li>
+            <li><a href="carrito.html">Carrito</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visítanos</h4>
+          <p>Camino a Niebla 4820<br>Valdivia, Región de Los Ríos</p>
+          <p>Mar. a sáb., 12:00–21:00<br>contacto@brumacerveceria.cl</p>
+        </div>
+      </div>
+      <div class="pie-pagina__inferior">
+        <p>© <span data-anio-actual></span> Cervecería Bruma. Bebe con moderación. Venta prohibida a menores de 18 años.</p>
+        <div class="pie-pagina__legal">
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
